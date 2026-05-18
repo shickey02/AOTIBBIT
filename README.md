@@ -49,25 +49,3 @@ Recent phases have explored:
 
 Rather than training one large opaque model, the project uses many smaller experimental scripts that produce measurable pass/fail outputs, diagnostics, CSVs, visualizations, and validation artifacts.
 
----
-
-## Repository Structure
-
-The exact structure may change as the project evolves, but the repository generally contains:
-
-```text
-bbit_geomlang/
-  geomlang_phaseXX_*.py
-  geomlang_phase26XX_*.py
-  geomlang_phase83_*.py
-  geomlang_phase108_*.py
-  ...
-outputs_basic32/
-  phase outputs
-  CSV reports
-  visualizations
-  route contracts
-  validation logs
-  transplant/selftest helpers
-requirements.txt
-README.md
