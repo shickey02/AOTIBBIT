@@ -1,28 +1,73 @@
-# bbit_geomlang
+# BBIT Geomlang
 
-A small prototype exploring geometric "language" recognition with a simple neural network.
+**BBIT Geomlang** is an experimental research pipeline for testing whether reasoning can be modeled as movement through geometric, semantic, and symbolic boundary fields.
 
-Files
-- `geomlang_prototype.py` — main prototype: synthetic data, MLP model, training loop, occlusion tests.
-- `requirements.txt` — basic dependencies (`torch`, `numpy`, `matplotlib`).
+The project began as a small prototype for recognizing simple geometric language with a neural network. It has since evolved into a phase-based experimental system exploring how concepts, proofs, paraphrases, theorem schemas, analogy boundaries, transfer maps, and reasoning failures can be represented, tested, rescued, rejected, and stabilized through structured geometry.
 
-Quick start
+BBIT stands for **Border-Based Intelligence Theory**.
 
-1. Create a virtual environment and install dependencies:
+The central idea is that intelligence may emerge not only from recognizing objects or tokens, but from learning the **borders between meanings**, the **conditions under which transformations remain valid**, and the **points where a statement stops being equivalent to itself**.
 
-```powershell
-python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
-```
+---
 
-2. Run prototype (small experiment):
+## Project Goals
 
-```powershell
-python geomlang_prototype.py --epochs 30
-```
+BBIT Geomlang investigates questions such as:
 
-Notes & Future Ideas
-- Replace synthetic circle task with more complex geometric primitives (triangles, polygons).
-- Replace MLP with an equivariant or graph-based model to better capture geometry.
-- Add interpretability methods (feature attribution, saliency) and richer occlusion tests.
-- Save checkpoints and add CLI flags for experiment logging.
+- Can semantic meaning be represented as a geometric field?
+- Can true paraphrases be accepted while near-paraphrases that alter meaning are rejected?
+- Can theorem applications become reusable schemas only when their transfer conditions survive?
+- Can a reasoning system identify when analogy breaks down?
+- Can local geometric transformations model conceptual motion?
+- Can failure cases be repaired through route analysis, candidate rescue, and constraint hardening?
+- Can reasoning be made more interpretable by tracking its boundary conditions?
 
+The project is not meant to be a polished machine learning product yet. It is a research sandbox for developing and stress-testing the BBIT hypothesis.
+
+---
+
+## Current Direction
+
+The current BBIT Geomlang system uses a sequence of numbered phase scripts. Each phase tests a specific reasoning property, boundary condition, or transfer mechanism.
+
+Recent phases have explored:
+
+- semantic boundary detection
+- true paraphrase acceptance
+- near-paraphrase rejection
+- local geometric field reasoning
+- piecewise transformation fields
+- theorem schema transfer
+- context-safe theorem applications
+- analogy boundary enforcement
+- variable rebinding
+- dependency transport
+- non-circularity checks
+- witness validation
+- base-case survival
+- route hardening and transplant validation
+
+Rather than training one large opaque model, the project uses many smaller experimental scripts that produce measurable pass/fail outputs, diagnostics, CSVs, visualizations, and validation artifacts.
+
+---
+
+## Repository Structure
+
+The exact structure may change as the project evolves, but the repository generally contains:
+
+```text
+bbit_geomlang/
+  geomlang_phaseXX_*.py
+  geomlang_phase26XX_*.py
+  geomlang_phase83_*.py
+  geomlang_phase108_*.py
+  ...
+outputs_basic32/
+  phase outputs
+  CSV reports
+  visualizations
+  route contracts
+  validation logs
+  transplant/selftest helpers
+requirements.txt
+README.md
